@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Color Converter</title>
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  </head>
+  <body>
+    <h1>Color Converter</h1>
+    <div class="div-color-model">
+      <label for="usr">HSV</label>
+      <div class="div-color-param">
+      	<label for="usr">H</label>
+      	<input type="number" value="0" class="form-control" id="number-hsv-h" onkeyup="numberHsvToOther()">
+      	<input type="range" min="0" max="100" value="0" id="range-hsv-h" oninput="rangeHsvToOther()">
+      </div>
+      <div class="div-color-param">
+      	<label for="usr">S</label>
+      	<input type="number" value="0" class="form-control" id="number-hsv-s" onkeyup="numberHsvToOther()">
+      	<input type="range" min="0" max="100" value="0" id="range-hsv-s" oninput="rangeHsvToOther()">
+      </div>
+      <div class="div-color-param">
+      	<label for="usr">V</label>
+      	<input type="number" value="0" class="form-control" id="number-hsv-v" onkeyup="numberHsvToOther()">
+      	<input type="range" min="0" max="100" value="0" id="range-hsv-v" oninput="rangeHsvToOther()">
+      </div>
+  	</div>
+    <div class="div-color-model">
+      <label for="pwd">XYZ</label>
+      <div class="div-color-param">
+      	<label for="pwd">X</label>
+      	<input type="number" value="0" class="form-control" id="number-xyz-x" onkeyup="numberXyzToOther()">
+      	<input type="range" min="0" max="95.0456" value="0" id="range-xyz-x" oninput="rangeXyzToOther()">
+      </div>
+      <div class="div-color-param">
+      	<label for="pwd">Y</label>
+      	<input type="number" value="0" class="form-control" id="number-xyz-y" onkeyup="numberXyzToOther()">
+      	<input type="range" min="0" max="100" value="0" id="range-xyz-y" oninput="rangeXyzToOther()">
+      </div>
+      <div class="div-color-param">
+      	<label for="pwd">Z</label>
+      	<input type="number" value="0" class="form-control" id="number-xyz-z" onkeyup="numberXyzToOther()">
+      	<input type="range" min="0" max="108.8754" value="0" id="range-xyz-z" oninput="rangeXyzToOther()">
+      </div>
+    </div>
+    <div class="div-color-model">
+      <label for="pwd" class="label-color-model">LAB</label>
+      <div class="div-color-param">
+      	<label for="pwd">L</label>
+      	<input type="number" value="0" class="form-control" id="number-lab-l" onkeyup="numberLabToOther()">
+      	<input type="range" min="0" max="100" value="0" id="range-lab-l" oninput="rangeLabToOther()">
+      </div>
+      <div class="div-color-param">
+      	<label for="pwd">A</label>
+      	<input type="number" value="0" class="form-control" id="number-lab-a" onkeyup="numberLabToOther()">
+      	<input type="range" min="-128" max="128" value="0" id="range-lab-a" oninput="rangeLabToOther()">
+      </div>
+      <div class="div-color-param">
+      	<label for="pwd">B</label>
+      	<input type="number" value="0" class="form-control" id="number-lab-b" onkeyup="numberLabToOther()">
+      	<input type="range" min="-128" max="128" value="0" id="range-lab-b" oninput="rangeLabToOther()">
+      </div>
+    </div>
+    <div class="current-color" id="current-color"></div>
+    <script src='./renderer.js'></script>
+  </body>
+</html>
